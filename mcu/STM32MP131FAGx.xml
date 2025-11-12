@@ -86,7 +86,7 @@
             <ContextIP ContextName="Application"/>
         </ContextSplit>
     </IP>
-    <IP ClockEnableMode="__HAL_RCC_ETH1MAC_CLK_ENABLE" ConfigFile="ETH-STM32MP13xx" InstanceName="ETH1" Name="ETH" Version="STM32MP13_ethermac1G_v1_1_rc1">
+    <IP ClockEnableMode="__HAL_RCC_ETH1CK_CLK_ENABLE" ConfigFile="ETH-STM32MP13xx" InstanceName="ETH1" Name="ETH" Version="STM32MP13_ethermac1G_v1_1_rc1">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA7S"/>
             <ContextIP ContextName="Application"/>
@@ -208,7 +208,7 @@
             <ContextIP ContextName="CortexA7NS"/>
         </ContextSplit>
     </IP>
-    <IP ConfigFile="IWDG-STM32MP13xx" InstanceName="IWDG1" Name="IWDG" Version="iwdg1_v3_0">
+    <IP ClockEnableMode="__HAL_RCC_IWDG1APB_CLK_ENABLE" ConfigFile="IWDG-STM32MP13xx" InstanceName="IWDG1" Name="IWDG" Version="iwdg1_v3_0">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootLoader" SynchronizedContexts="CortexA7S"/>
             <ContextIP ContextName="CortexA7S" SynchronizedContexts="BootLoader"/>
@@ -217,7 +217,7 @@
             <ContextIP ContextName="Application"/>
         </ContextSplit>
     </IP>
-    <IP ConfigFile="IWDG-STM32MP13xx" InstanceName="IWDG2" Name="IWDG" Version="iwdg1_v3_0">
+    <IP ClockEnableMode="__HAL_RCC_IWDG2APB_CLK_ENABLE" ConfigFile="IWDG-STM32MP13xx" InstanceName="IWDG2" Name="IWDG" Version="iwdg1_v3_0">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootLoader" SynchronizedContexts="CortexA7S,CortexA7NS"/>
             <ContextIP ContextName="CortexA7S" SynchronizedContexts="BootLoader,CortexA7NS"/>

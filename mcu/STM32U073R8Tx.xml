@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2024 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32U0_256" DBVersion="V3.0" Family="STM32U0" HasPowerPad="false" IOType="" Line="STM32U0x3" Package="LQFP64" RefName="STM32U073R8Tx" xmlns="http://dummy.com">
     <Core>ARM Cortex-M0+</Core>
     <Ram>40</Ram>
@@ -19,9 +19,9 @@
     <IP InstanceName="I2C2" Name="I2C" Version="i2c2_v1_1U5_Cube"/>
     <IP InstanceName="I2C3" Name="I2C" Version="i2c2_v1_1U5_Cube"/>
     <IP InstanceName="I2C4" Name="I2C" Version="i2c2_v1_1U5_Cube"/>
-    <IP ConfigFile="IRTIM-STM32U0xx" InstanceName="IRTIM" Name="IRTIM" Version="L5_irtim_v1_0_Cube"/>
+    <IP ConfigFile="IRTIM-STM32U0xx" InstanceName="IRTIM" Name="IRTIM" Version="U0xx_irtim_v1_0_Cube"/>
     <IP ConfigFile="IWDG-STM32U0xx" InstanceName="IWDG" Name="IWDG" Version="iwdg1_v3_0"/>
-    <IP ConfigFile="LCD-STM32U0xx" InstanceName="LCD" Name="LCD" Version="lcdc1_v1_2_Cube"/>
+    <IP ConfigFile="LCD-STM32U0xx" InstanceName="LCD" Name="LCD" Version="lcdc1_v1_5_Cube"/>
     <IP ConfigFile="LevelX-STM32U0xx" InstanceName="LEVELX" Name="LevelX" Version="v1.0.0_U0_Cube"/>
     <IP ConfigFile="LPTIM-STM32U0xx" InstanceName="LPTIM1" Name="LPTIM" Version="U0_lptimer1_v2_3_Cube"/>
     <IP ConfigFile="LPTIM-STM32U0xx" InstanceName="LPTIM2" Name="LPTIM" Version="U0_lptimer1_v2_3_Cube"/>

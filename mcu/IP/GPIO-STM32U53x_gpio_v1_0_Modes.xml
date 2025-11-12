@@ -2962,7 +2962,7 @@
                 <PossibleValue>GPIO_AF10_DCMI</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="DEBUG_JTRST">
+        <PinSignal Name="DEBUG_NJTRST">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF0_TRACE</PossibleValue>
             </SpecificParameter>

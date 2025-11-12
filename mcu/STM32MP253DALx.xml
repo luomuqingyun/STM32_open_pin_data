@@ -48,7 +48,7 @@
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
         </ContextSplit>
     </IP>
-    <IP ClockEnableMode="__HAL_RCC_ADC12_CLK_ENABLE" ConfigFile="ADC-STM32MP2xx" InstanceName="ADC3" Name="ADC" Version="aditf5_v3_3_MP2_Cube">
+    <IP ClockEnableMode="__HAL_RCC_ADC3_CLK_ENABLE" ConfigFile="ADC-STM32MP2xx" InstanceName="ADC3" Name="ADC" Version="aditf5_v3_3_MP2_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
             <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>

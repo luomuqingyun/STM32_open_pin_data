@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2024 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32WB1" DBVersion="V3.0" Family="STM32WB" HasPowerPad="false" IOType="" Line="STM32WBxM Modules" Package="LGA77" RefName="STM32WB1MMCHx" xmlns="http://dummy.com">
     <Core>ARM Cortex-M4</Core>
     <MemoryMap>Available</MemoryMap>
@@ -21,6 +21,7 @@
     <IP ConfigFile="LPTIM-STM32WBxx" InstanceName="LPTIM1" Name="LPTIM" Version="WB5_lptimer1_v1_0_Cube"/>
     <IP ConfigFile="LPTIM-STM32WBxx" InstanceName="LPTIM2" Name="LPTIM" Version="WB5_lptimer1_v1_0_Cube"/>
     <IP InstanceName="LPUART1" Name="LPUART" Version="sci3_v1_3_Cube"/>
+    <IP ConfigFile="PDM2PCM-STM32WBxx" InstanceName="PDM2PCM" Name="PDM2PCM" Version="pdm2pcm_v3.3.0_Cube"/>
     <IP ClockEnableMode="__HAL_RCC_PKA_CLK_ENABLE" ConfigFile="PKA-STM32WBxx" InstanceName="PKA" Name="PKA" Version="pka32_v1_0_Cube"/>
     <IP InstanceName="RCC" Name="RCC" Version="STM32WB1_rcc_v1_0"/>
     <IP InstanceName="RF" Name="RF" Version="rf2g4ctrl_v1_0_Cube"/>

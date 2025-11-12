@@ -2698,7 +2698,7 @@
             </SpecificParameter>
         </PinSignal>
     </GPIO_Pin>
-    <GPIO_Pin PortName="PB" Name="PB4(NJRST)">
+    <GPIO_Pin PortName="PB" Name="PB4(NJTRST)">
         <SpecificParameter Name="EXTI_Line">
             <PossibleValue>EXTI_LINE_4</PossibleValue>
         </SpecificParameter>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2024 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32WB0" DBVersion="V3.0" Family="STM32WB0" FwLibrary="STM32Cube_FW_WB0" HasPowerPad="false" IOType="" Line="STM32WBx9" Package="VFQFPN32" RefName="STM32WB09KEVx" xmlns="http://dummy.com">
     <Core>ARM Cortex-M0+</Core>
     <MemoryMap>Available</MemoryMap>
@@ -177,6 +177,7 @@
     </Pin>
     <Pin Name="PB14" Position="19" Type="I/O">
         <Signal Name="I2C1_SDA"/>
+        <Signal Name="I2C1_SMBA"/>
         <Signal Name="PWR_PVD_IN"/>
         <Signal Name="PWR_WKUP18"/>
         <Signal Name="RADIO_TX_SEQUENCE"/>

@@ -515,7 +515,7 @@
         <Signal Name="TAMP_IN1"/>
         <Signal Name="TAMP_OUT2"/>
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
-        <Condition Diagnostic="" Expression="!(RTC_OUT1 &amp; CALIBRATION)"/>
+        <Condition Diagnostic="" Expression="!(RTC_OUT2 &amp; (WakeUp_Outputed | AlarmA_Outputed | AlarmB_Outputed))"/>
     </Pin>
     <Pin Name="PC14-OSC32_IN(OSC32_IN)" Position="3" Type="I/O">
         <Signal Name="RCC_OSC32_IN"/>
@@ -679,7 +679,7 @@
         <Signal Name="RTC_OUT2"/>
         <Signal Name="SPI3_MOSI"/>
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
-        <Condition Diagnostic="" Expression="!(RTC_OUT2 &amp; (WakeUp_Outputed | AlarmA_Outputed | AlarmB_Outputed))"/>
+        <Condition Diagnostic="" Expression="!(RTC_OUT1 &amp; CALIBRATION)"/>
     </Pin>
     <Pin Name="PP2" Position="25" Type="I/O">
         <Signal Name="XSPIM_P1_IO2"/>

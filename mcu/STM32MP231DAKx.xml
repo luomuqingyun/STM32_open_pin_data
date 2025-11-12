@@ -29,9 +29,9 @@
     <IP ClockEnableMode="__HAL_RCC_ADC12_CLK_ENABLE" ConfigFile="ADC-STM32MP2xx" IPContextCoupling="ADC1IADC2" InstanceName="ADC1" Name="ADC" Version="aditf5_v3_3_MP2_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -40,20 +40,20 @@
     <IP ClockEnableMode="__HAL_RCC_ADC12_CLK_ENABLE" ConfigFile="ADC-STM32MP2xx" IPContextCoupling="ADC1IADC2" InstanceName="ADC2" Name="ADC" Version="aditf5_v3_3_MP2_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
         </ContextSplit>
     </IP>
-    <IP ClockEnableMode="__HAL_RCC_ADC12_CLK_ENABLE" ConfigFile="ADC-STM32MP2xx" InstanceName="ADC3" Name="ADC" Version="aditf5_v3_3_MP2_Cube">
+    <IP ClockEnableMode="__HAL_RCC_ADC3_CLK_ENABLE" ConfigFile="ADC-STM32MP2xx" InstanceName="ADC3" Name="ADC" Version="aditf5_v3_3_MP2_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -62,9 +62,9 @@
     <IP InstanceName="BOOT" Name="BOOT" Version="v1_1_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -91,16 +91,16 @@
     <IP ConfigFile="CORTEX_M33-STM32MP2xx" InstanceName="CORTEX_M33" Name="CORTEX_M33" Version="cortex_v1_0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SSecureOS" ForcedSelection="true"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexA35NSOS" ForcedSelection="true"/>
         </ContextSplit>
     </IP>
     <IP ConfigFile="CRC-STM32MP2xx" InstanceName="CRC" Name="CRC" Version="integtest1_v2_2">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -109,9 +109,9 @@
     <IP ClockEnableMode="__HAL_RCC_CSI_CLK_ENABLE" InstanceName="CSI" Name="CSI" Version="v1_0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -120,9 +120,9 @@
     <IP IPContextCoupling="ICACHEIDCACHE" InstanceName="DCACHE" Name="DCACHE" Version="STM32U5xx1_v0_0">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -131,9 +131,9 @@
     <IP InstanceName="DCMI" Name="DCMI" Version="STM32MP2_cci_v2_0">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -142,9 +142,9 @@
     <IP ConfigFile="DCMIPP-STM32MP2xx" InstanceName="DCMIPP" Name="DCMIPP" Version="cci_v2_0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -162,15 +162,15 @@
             <ContextIP ContextName="CortexA35SFSBLA" ContextProject="M33TD"/>
             <ContextIP ContextName="CortexA35SSecureOS" ContextProject="A35TD_TZDIS" ForcedSelection="true"/>
             <ContextIP ContextName="CortexA35SSecureOS" ContextProject="A35TD_TZEN" ForcedSelection="true"/>
-            <ContextIP ContextName="CortexA35SSecureOS" ContextProject="M33TD" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35SSecureOS" ContextProject="M33TD" DevalidatedOnSelect="CortexA35NSOS"/>
         </ContextSplit>
     </IP>
     <IP InstanceName="DEBUG" Name="DEBUG" Version="STM32MP2_debug_v1_0">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -179,18 +179,18 @@
     <IP InstanceName="DTS" Name="DTS" Version="dtp_1_1">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
         </ContextSplit>
     </IP>
     <IP ConfigFile="ETH-STM32MP2xx" InstanceName="ETH1" Name="ETH" Version="STM32MP2_ethermac1G_v1_1_rc1">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -219,9 +219,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35" ForcedSelection="true"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
             <ContextIP ContextName="ExtMemLoader" ForcedSelection="true"/>
@@ -230,9 +230,9 @@
     <IP InstanceName="HDP" Name="HDP" Version="STM32MP1_hdp_v1_0">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
         </ContextSplit>
@@ -270,9 +270,9 @@
     <IP InstanceName="I2C1" Name="I2C" Version="STM32MP_i2c2_v1_3">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -282,9 +282,9 @@
     <IP InstanceName="I2C2" Name="I2C" Version="STM32MP_i2c2_v1_3">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -294,9 +294,9 @@
     <IP InstanceName="I2C7" Name="I2C" Version="STM32MP_i2c2_v1_3">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -306,9 +306,9 @@
     <IP InstanceName="I2C8" Name="I2C" Version="STM32MP_i2c2_v1_3">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -318,9 +318,9 @@
     <IP ClockEnableMode="__HAL_RCC_SPI1_CLK_ENABLE" ConfigFile="I2S-STM32MPxx" IPContextCoupling="SPI1I2S1" InstanceName="I2S1" Name="I2S" Version="spi2s3_v2_1_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -329,9 +329,9 @@
     <IP ClockEnableMode="__HAL_RCC_SPI2_CLK_ENABLE" ConfigFile="I2S-STM32MPxx" IPContextCoupling="SPI2I2S2" InstanceName="I2S2" Name="I2S" Version="spi2s3_v2_1_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -340,9 +340,9 @@
     <IP ClockEnableMode="__HAL_RCC_SPI3_CLK_ENABLE" ConfigFile="I2S-STM32MPxx" IPContextCoupling="SPI3I2S3" InstanceName="I2S3" Name="I2S" Version="spi2s3_v2_1_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -351,9 +351,9 @@
     <IP InstanceName="I3C1" Name="I3C" Version="i3c1_v1_0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -362,9 +362,9 @@
     <IP InstanceName="I3C2" Name="I3C" Version="i3c1_v1_0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -373,9 +373,9 @@
     <IP InstanceName="I3C4" Name="I3C" Version="i3c1_v1_0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -384,9 +384,9 @@
     <IP IPContextCoupling="ICACHEIDCACHE" InstanceName="ICACHE" Name="ICACHE" Version="Icache_v1_0_0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -406,9 +406,9 @@
     <IP ClockEnableMode="none" ConfigFile="IWDG-STM32MP2xx" InstanceName="IWDG1" Name="IWDG" Version="iwdg1_v3_0">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="ExtMemLoader" ForcedSelection="true"/>
             <ContextIP ContextName="BootROMA35" ContextProject="A35TD_TZDIS" ForcedSelection="true"/>
             <ContextIP ContextName="BootROMA35" ContextProject="A35TD_TZEN" ForcedSelection="true"/>
@@ -418,9 +418,9 @@
     <IP ClockEnableMode="none" ConfigFile="IWDG-STM32MP2xx" InstanceName="IWDG2" Name="IWDG" Version="iwdg1_v3_0">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="BootROMA35" ContextProject="A35TD_TZDIS" ForcedSelection="true"/>
             <ContextIP ContextName="BootROMA35" ContextProject="A35TD_TZEN" ForcedSelection="true"/>
             <ContextIP ContextName="BootROMA35" ContextProject="M33TD"/>
@@ -443,9 +443,9 @@
     <IP ConfigFile="LPTIM-STM32MP2xx" InstanceName="LPTIM1" Name="LPTIM" Version="MP2_lptimer1_v2_3_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -454,9 +454,9 @@
     <IP ConfigFile="LPTIM-STM32MP2xx" InstanceName="LPTIM2" Name="LPTIM" Version="MP2_lptimer1_v2_3_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -465,9 +465,9 @@
     <IP ConfigFile="LPTIM-STM32MP2xx" InstanceName="LPTIM3" Name="LPTIM" Version="MP2_lptimer1_v2_3_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -476,9 +476,9 @@
     <IP ConfigFile="LPTIM-STM32MP2xx" InstanceName="LPTIM4" Name="LPTIM" Version="MP2_lptimer1_v2_3_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -487,9 +487,9 @@
     <IP ConfigFile="LPTIM-STM32MP2xx" InstanceName="LPTIM5" Name="LPTIM" Version="MP2_lptimer1_v2_3_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -498,9 +498,9 @@
     <IP InstanceName="LPUART1" Name="LPUART" Version="sci3_v1_3_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -521,9 +521,9 @@
     <IP ConfigFile="MDF-STM32MP2xx" InstanceName="MDF1" Name="MDF" Version="STM32MP2_mdf_v1_0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -533,9 +533,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -545,9 +545,9 @@
     <IP ClockEnableMode="__HAL_RCC_OSPI2_CLK_ENABLE" InstanceName="OCTOSPI2" Name="OCTOSPI" Version="octospi_v5_2_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -558,9 +558,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -575,9 +575,9 @@
     <IP InstanceName="PSSI" Name="PSSI" Version="pssi_v1_0_MP2_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -624,9 +624,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35" ForcedSelection="true"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="ExtMemLoader" ForcedSelection="true"/>
@@ -647,9 +647,9 @@
     <IP ConfigFile="SAI-STM32MP2xx" InstanceName="SAI1" Name="SAI" Version="STM32MP2_sai1_v2_1">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -658,9 +658,9 @@
     <IP ConfigFile="SAI-STM32MP2xx" InstanceName="SAI2" Name="SAI" Version="STM32MP2_sai1_v2_1">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -669,9 +669,9 @@
     <IP ConfigFile="SAI-STM32MP2xx" InstanceName="SAI3" Name="SAI" Version="STM32MP2_sai1_v2_1">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -680,9 +680,9 @@
     <IP ConfigFile="SAI-STM32MP2xx" InstanceName="SAI4" Name="SAI" Version="STM32MP2_sai1_v2_1">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -692,9 +692,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -705,9 +705,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -717,9 +717,9 @@
     <IP ConfigFile="SDIO-STM32MP2xx" InstanceName="SDMMC3" Name="SDMMC" Version="STM32MP2_sdmmc2_v2_0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -729,9 +729,9 @@
     <IP InstanceName="SERC" Name="SERC" Version="v1.0_MP2_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
         </ContextSplit>
@@ -739,9 +739,9 @@
     <IP ConfigFile="SPDIFRX-STM32MP2xx" InstanceName="SPDIFRX" Name="SPDIFRX" Version="STM32MP_spdifrx1_v1_2">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -750,9 +750,9 @@
     <IP ConfigFile="SPI-STM32MP2xx" IPContextCoupling="SPI1I2S1" InstanceName="SPI1" Name="SPI" Version="spi2s3_v2_5_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -761,9 +761,9 @@
     <IP ConfigFile="SPI-STM32MP2xx" IPContextCoupling="SPI2I2S2" InstanceName="SPI2" Name="SPI" Version="spi2s3_v2_5_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -772,9 +772,9 @@
     <IP ConfigFile="SPI-STM32MP2xx" IPContextCoupling="SPI3I2S3" InstanceName="SPI3" Name="SPI" Version="spi2s3_v2_5_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -783,9 +783,9 @@
     <IP ConfigFile="SPI-STM32MP2xx" InstanceName="SPI4" Name="SPI" Version="spi2s3_v2_5_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -794,9 +794,9 @@
     <IP ConfigFile="SPI-STM32MP2xx" InstanceName="SPI5" Name="SPI" Version="spi2s3_v2_5_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -805,9 +805,9 @@
     <IP ConfigFile="SPI-STM32MP2xx" InstanceName="SPI8" Name="SPI" Version="spi2s3_v2_5_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -847,9 +847,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM1" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -858,9 +858,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM2" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -869,9 +869,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM3" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -880,9 +880,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM4" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -891,9 +891,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM5" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -902,9 +902,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM6" Name="TIM6_7MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -913,9 +913,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM7" Name="TIM6_7MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -924,9 +924,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM8" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -935,9 +935,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM10" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -946,9 +946,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM11" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -957,9 +957,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM12" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -968,9 +968,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM13" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -979,9 +979,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM14" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -990,9 +990,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM15" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -1001,9 +1001,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM16" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -1012,9 +1012,9 @@
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM17" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -1024,9 +1024,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -1037,9 +1037,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexA35SSecureOS"/>
@@ -1050,9 +1050,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -1062,9 +1062,9 @@
     <IP ClockEnableMode="__HAL_RCC_UCPD1_CLK_ENABLE" ConfigFile="UCPD-STM32MP2xx" InstanceName="UCPD1" Name="UCPD" Version="ucpd_v1_0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -1074,9 +1074,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -1086,9 +1086,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -1098,9 +1098,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -1110,9 +1110,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -1122,9 +1122,9 @@
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35"/>
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="ExtMemLoader"/>
@@ -1133,9 +1133,9 @@
     <IP InstanceName="USBH_HS" Name="USBH_HS" Version="STM32MP2_host_v1_0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="ExtMemLoader"/>
@@ -1144,9 +1144,9 @@
     <IP ConfigFile="USBPD-STM32MP2xx" InstanceName="USBPD" Name="USBPD" Version="usbpd_STM32MP2_v4.3_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
@@ -1156,9 +1156,9 @@
     <IP ClockEnableMode="__HAL_RCC_VREF_CLK_ENABLE" ConfigFile="SYS-STM32MP2xx" InstanceName="VREFBUF" Name="VREFBUF" Version="STM32MP2_vrefbuf_v1_0">
         <ContextSplit Name="split1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
-            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
-            <ContextIP ContextName="CortexA35NSSSBL" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
-            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
+            <ContextIP ContextName="CortexA35SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS"/>
+            <ContextIP ContextName="CortexA35NSSSBL"/>
+            <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
             <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>

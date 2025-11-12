@@ -11,7 +11,7 @@
     <MemoryMap>Available</MemoryMap>
     <TrustZone>Available</TrustZone>
     <Ram>256</Ram>
-    <IONb>34</IONb>
+    <IONb>32</IONb>
     <Die>DIE4B0</Die>
     <Flash>1024</Flash>
     <IP ClockEnableMode="__HAL_RCC_ADC4_CLK_ENABLE" ConfigFile="ADC-STM32WBAxx" InstanceName="ADC4" Name="ADC" Version="aditf4_v4_WBA_Cube">
@@ -44,7 +44,7 @@
             <ContextIP ContextName="CortexM33"/>
         </ContextSplit>
     </IP>
-    <IP ConfigFile="COMMON_WPAN-STM32WBAxx" InstanceName="COMMON_WPAN" Name="COMMON_WPAN" Version="v1.2.0_Cube">
+    <IP ConfigFile="COMMON_WPAN-STM32WBAxx" InstanceName="COMMON_WPAN" Name="COMMON_WPAN" Version="v1.3.0_Cube">
         <ContextSplit Name="split1">
             <ContextIP ContextName="CortexM33NS" InitializerForced="true"/>
         </ContextSplit>
@@ -290,6 +290,14 @@
             <ContextIP ContextName="CortexM33"/>
         </ContextSplit>
     </IP>
+    <IP ConfigFile="NetXDuo-STM32WBAxx" InstanceName="NETXDUO" Name="NetXDuo" Version="v1.0.0_WBA_Cube">
+        <ContextSplit Name="split1">
+            <ContextIP ContextName="CortexM33NS" InitializerForced="true"/>
+        </ContextSplit>
+        <ContextSplit Name="split3">
+            <ContextIP ContextName="CortexM33"/>
+        </ContextSplit>
+    </IP>
     <IP ClockEnableMode="__HAL_RCC_CRC_CLK_ENABLE" ConfigFile="PDM2PCM-STM32WBAxx" InstanceName="PDM2PCM" Name="PDM2PCM" Version="pdm2pcm_v3.2.0_Cube">
         <ContextSplit Name="split1">
             <ContextIP ContextName="CortexM33S"/>
@@ -312,7 +320,7 @@
             <ContextIP ContextName="CortexM33"/>
         </ContextSplit>
     </IP>
-    <IP ConfigFile="PTA-STM32WBAxx" InstanceName="PTA" Name="PTA" Version="STM32WBA_v1_0_Cube">
+    <IP ClockEnableMode="__HAL_RCC_PTACONV_CLK_ENABLE" ConfigFile="PTA-STM32WBAxx" InstanceName="PTA" Name="PTA" Version="STM32WBA_v1_0_Cube">
         <ContextSplit Name="split1">
             <ContextIP ContextName="CortexM33NS" InitializerForced="true"/>
         </ContextSplit>
@@ -322,7 +330,7 @@
     </IP>
     <IP ClockEnableMode="__HAL_RCC_PWR_CLK_ENABLE" ConfigFile="PWR-STM32WBA6xx" InstanceName="PWR" Name="PWR" Version="STM32WBA6_pwr_v1_0">
         <ContextSplit Name="split1">
-            <ContextIP ContextName="CortexM33S" ForcedSelection="true" InitializerForced="true"/>
+            <ContextIP ContextName="CortexM33S" ForcedSelection="true"/>
             <ContextIP ContextName="CortexM33NS" ForcedSelection="true"/>
         </ContextSplit>
         <ContextSplit Name="split3">
@@ -434,7 +442,7 @@
             <ContextIP ContextName="CortexM33"/>
         </ContextSplit>
     </IP>
-    <IP ConfigFile="STM32_WPAN-STM32WBAxx" InstanceName="STM32_WPAN" Name="STM32_WPAN" Version="v2.7_Cube">
+    <IP ConfigFile="STM32_WPAN-STM32WBAxx" InstanceName="STM32_WPAN" Name="STM32_WPAN" Version="v2.8_Cube">
         <ContextSplit Name="split1">
             <ContextIP ContextName="CortexM33NS" InitializerForced="true"/>
         </ContextSplit>
@@ -796,13 +804,11 @@
         <Signal Name="USB_OTG_HS_ID"/>
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
     </Pin>
-    <Pin Name="PD7" Position="16" Type="I/O">
+    <Pin Name="PD7" Position="16" Type="MonoIO">
         <Signal Name="USB_OTG_HS_DM"/>
-        <Signal IOModes="Input,Output,Analog,EXTI" Name="GPIO"/>
     </Pin>
-    <Pin Name="PD6" Position="17" Type="I/O">
+    <Pin Name="PD6" Position="17" Type="MonoIO">
         <Signal Name="USB_OTG_HS_DP"/>
-        <Signal IOModes="Input,Output,Analog,EXTI" Name="GPIO"/>
     </Pin>
     <Pin Name="PB8" Position="18" Type="I/O">
         <Signal Name="COMP1_OUT"/>
@@ -838,7 +844,7 @@
         <Condition Diagnostic="" Expression="!(RTC_OUT2 &amp; (WakeUp_Outputed | AlarmA_Outputed | AlarmB_Outputed))"/>
     </Pin>
     <Pin Name="VDD" Position="22" Type="Power"/>
-    <Pin Name="PB4(NJRST)" Position="23" Type="I/O">
+    <Pin Name="PB4(NJTRST)" Position="23" Type="I/O">
         <Signal Name="DEBUG_NJTRST"/>
         <Signal Name="LPTIM2_IN2"/>
         <Signal Name="PTA_ACTIVE"/>

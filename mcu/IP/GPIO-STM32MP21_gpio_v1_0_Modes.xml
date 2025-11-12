@@ -1585,6 +1585,7 @@
         <ConfigForMode>System</ConfigForMode>
         <Parameter Name="PinAttribute"/>
     </RefMode>
+    <RefMode Name="SystemRIF"/>
     <GPIO_Pin PortName="PA" Name="ANA0">
         <SpecificParameter Name="SYSCFG_AnalogSwitch">
             <PossibleValue>SYSCFG_SWITCH_PA0</PossibleValue>

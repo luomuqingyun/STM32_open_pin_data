@@ -2530,7 +2530,7 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_4</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="DEBUG_JTRST">
+        <PinSignal Name="DEBUG_NJTRST">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF0_TRACE</PossibleValue>
             </SpecificParameter>

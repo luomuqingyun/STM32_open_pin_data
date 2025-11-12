@@ -1345,7 +1345,7 @@
     </RefMode>
     <RefMode Name="EXTI1">
         <Condition Diagnostic="" Expression="S_SECURE"/>
-        <ConfigForMode>EXTI</ConfigForMode>
+        <ConfigForMode>EXTI1</ConfigForMode>
         <Parameter Name="GPIO_PuPd"/>
         <Parameter Name="GPIOx"/>
         <Parameter Name="GPIO_ModeDefaultEXTI1"/>
@@ -1357,7 +1357,7 @@
     </RefMode>
     <RefMode Name="EXTI2">
         <Condition Diagnostic="" Expression="S_SECURE"/>
-        <ConfigForMode>EXTI</ConfigForMode>
+        <ConfigForMode>EXTI2</ConfigForMode>
         <Parameter Name="GPIO_PuPd"/>
         <Parameter Name="GPIOx"/>
         <Parameter Name="GPIO_ModeDefaultEXTI2"/>
@@ -1393,7 +1393,7 @@
     </RefMode>
     <RefMode Name="EXTI1">
         <Condition Diagnostic="" Expression="!S_SECURE"/>
-        <ConfigForMode>EXTI</ConfigForMode>
+        <ConfigForMode>EXTI1</ConfigForMode>
         <Parameter Name="GPIO_PuPd"/>
         <Parameter Name="GPIOx"/>
         <Parameter Name="GPIO_ModeDefaultEXTI1"/>
@@ -1411,7 +1411,7 @@
     </RefMode>
     <RefMode Name="EXTI2">
         <Condition Diagnostic="" Expression="!S_SECURE"/>
-        <ConfigForMode>EXTI</ConfigForMode>
+        <ConfigForMode>EXTI2</ConfigForMode>
         <Parameter Name="GPIO_PuPd"/>
         <Parameter Name="GPIOx"/>
         <Parameter Name="GPIO_ModeDefaultEXTI2"/>
@@ -1585,6 +1585,7 @@
         <ConfigForMode>System</ConfigForMode>
         <Parameter Name="PinAttribute"/>
     </RefMode>
+    <RefMode Name="SystemRIF"/>
     <GPIO_Pin PortName="PA" Name="ANA0">
         <SpecificParameter Name="SYSCFG_AnalogSwitch">
             <PossibleValue>SYSCFG_SWITCH_PA0</PossibleValue>

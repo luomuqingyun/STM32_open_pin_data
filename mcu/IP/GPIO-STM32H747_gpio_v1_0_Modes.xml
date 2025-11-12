@@ -356,7 +356,7 @@
     </RefMode>
     <RefMode Name="AlternateFunctionPushPullHighDefault">
         <Condition Diagnostic="" Expression="PB6"/>
-        <ConfigForMode>AlternateFunction</ConfigForMode>
+        <ConfigForMode>AlternateFunctionPPHighDefault</ConfigForMode>
         <Parameter Name="GPIO_AF"/>
         <Parameter Name="GPIO_Speed_Default_HIGH"/>
         <Parameter Name="GPIO_PuPd"/>
@@ -370,7 +370,7 @@
     </RefMode>
     <RefMode Name="AlternateFunctionPushPullHighDefault">
         <Condition Diagnostic="" Expression="PB7"/>
-        <ConfigForMode>AlternateFunction</ConfigForMode>
+        <ConfigForMode>AlternateFunctionPPHighDefault</ConfigForMode>
         <Parameter Name="GPIO_AF"/>
         <Parameter Name="GPIO_Speed_Default_HIGH"/>
         <Parameter Name="GPIO_PuPd"/>
@@ -384,7 +384,7 @@
     </RefMode>
     <RefMode Name="AlternateFunctionPushPullHighDefault">
         <Condition Diagnostic="" Expression="PB8"/>
-        <ConfigForMode>AlternateFunction</ConfigForMode>
+        <ConfigForMode>AlternateFunctionPPHighDefault</ConfigForMode>
         <Parameter Name="GPIO_AF"/>
         <Parameter Name="GPIO_Speed_Default_HIGH"/>
         <Parameter Name="GPIO_PuPd"/>
@@ -398,7 +398,7 @@
     </RefMode>
     <RefMode Name="AlternateFunctionPushPullHighDefault">
         <Condition Diagnostic="" Expression="PB9"/>
-        <ConfigForMode>AlternateFunction</ConfigForMode>
+        <ConfigForMode>AlternateFunctionPPHighDefault</ConfigForMode>
         <Parameter Name="GPIO_AF"/>
         <Parameter Name="GPIO_Speed_Default_HIGH"/>
         <Parameter Name="GPIO_PuPd"/>
@@ -412,7 +412,7 @@
     </RefMode>
     <RefMode Name="AlternateFunctionPushPullHighDefault">
         <Condition Diagnostic="" Expression="!(PB9|PB8|PB7|PB6)"/>
-        <ConfigForMode>AlternateFunction</ConfigForMode>
+        <ConfigForMode>AlternateFunctionPPHighDefault</ConfigForMode>
         <Parameter Name="GPIO_AF"/>
         <Parameter Name="GPIO_Speed_Default_HIGH"/>
         <Parameter Name="GPIO_PuPd"/>

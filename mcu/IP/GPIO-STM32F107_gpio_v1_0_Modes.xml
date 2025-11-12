@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2021 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
 <IP DBVersion="V3.0" IPType="service" Name="GPIO" Version="STM32F107_gpio_v1_0" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:schemaLocation="http://dummy.com IP_Modes_V3_0.xsd" xmlns="http://dummy.com">
     <About>GPIO: General Purpose Input Output</About>
     <RefParameter Name="GPIO_AF" Comment="GPIO Alternate Function" Type="list" DefaultValue="null" Visible="false"/>
@@ -709,7 +709,7 @@
         </PinSignal>
         <PinSignal Name="TIM3_CH3">
             <RemapBlock Name="TIM3_REMAP0" DefaultRemap="true" />
-            <RemapBlock Name="TIM3_REMAP1">
+            <RemapBlock Name="TIM3_REMAP2">
                <SpecificParameter Name="GPIO_AF">
                    <PossibleValue>__HAL_AFIO_REMAP_TIM3_PARTIAL</PossibleValue>
                </SpecificParameter>
@@ -735,7 +735,7 @@
         </PinSignal>
         <PinSignal Name="TIM3_CH4">
             <RemapBlock Name="TIM3_REMAP0" DefaultRemap="true" />
-            <RemapBlock Name="TIM3_REMAP1">
+            <RemapBlock Name="TIM3_REMAP2">
                <SpecificParameter Name="GPIO_AF">
                    <PossibleValue>__HAL_AFIO_REMAP_TIM3_PARTIAL</PossibleValue>
                </SpecificParameter>
@@ -916,7 +916,7 @@
             <RemapBlock Name="SPI3_REMAP0" DefaultRemap="true" />
         </PinSignal>
         <PinSignal Name="TIM3_CH1">
-            <RemapBlock Name="TIM3_REMAP1">
+            <RemapBlock Name="TIM3_REMAP2">
                <SpecificParameter Name="GPIO_AF">
                    <PossibleValue>__HAL_AFIO_REMAP_TIM3_PARTIAL</PossibleValue>
                </SpecificParameter>
@@ -951,7 +951,7 @@
             <RemapBlock Name="SPI3_REMAP0" DefaultRemap="true" />
         </PinSignal>
         <PinSignal Name="TIM3_CH2">
-            <RemapBlock Name="TIM3_REMAP1">
+            <RemapBlock Name="TIM3_REMAP2">
                <SpecificParameter Name="GPIO_AF">
                    <PossibleValue>__HAL_AFIO_REMAP_TIM3_PARTIAL</PossibleValue>
                </SpecificParameter>
@@ -1223,7 +1223,7 @@
             <PossibleValue>AFIO_EVENTOUT_PIN_6</PossibleValue>
         </SpecificParameter>
         <PinSignal Name="TIM3_CH1">
-            <RemapBlock Name="TIM3_REMAP2">
+            <RemapBlock Name="TIM3_REMAP3">
                <SpecificParameter Name="GPIO_AF">
                    <PossibleValue>__HAL_AFIO_REMAP_TIM3_ENABLE</PossibleValue>
                </SpecificParameter>
@@ -1238,7 +1238,7 @@
             <PossibleValue>AFIO_EVENTOUT_PIN_7</PossibleValue>
         </SpecificParameter>
         <PinSignal Name="TIM3_CH2">
-            <RemapBlock Name="TIM3_REMAP2">
+            <RemapBlock Name="TIM3_REMAP3">
                <SpecificParameter Name="GPIO_AF">
                    <PossibleValue>__HAL_AFIO_REMAP_TIM3_ENABLE</PossibleValue>
                </SpecificParameter>
@@ -1253,7 +1253,7 @@
             <PossibleValue>AFIO_EVENTOUT_PIN_8</PossibleValue>
         </SpecificParameter>
         <PinSignal Name="TIM3_CH3">
-            <RemapBlock Name="TIM3_REMAP2">
+            <RemapBlock Name="TIM3_REMAP3">
                <SpecificParameter Name="GPIO_AF">
                    <PossibleValue>__HAL_AFIO_REMAP_TIM3_ENABLE</PossibleValue>
                </SpecificParameter>
@@ -1268,7 +1268,7 @@
             <PossibleValue>AFIO_EVENTOUT_PIN_9</PossibleValue>
         </SpecificParameter>
         <PinSignal Name="TIM3_CH4">
-            <RemapBlock Name="TIM3_REMAP2">
+            <RemapBlock Name="TIM3_REMAP3">
                <SpecificParameter Name="GPIO_AF">
                    <PossibleValue>__HAL_AFIO_REMAP_TIM3_ENABLE</PossibleValue>
                </SpecificParameter>

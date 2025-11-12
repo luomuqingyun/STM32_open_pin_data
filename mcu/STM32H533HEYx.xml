@@ -229,7 +229,7 @@
             <ContextIP ContextName="CortexM33NS"/>
         </ContextSplit>
     </IP>
-    <IP ConfigFile="I2S-STM32H5xx" IPContextCoupling="SPI1I2S1" InstanceName="I2S1" Name="I2S" Version="spi2s3_v2_1_Cube">
+    <IP ClockEnableMode="__HAL_RCC_SPI1_CLK_ENABLE" ConfigFile="I2S-STM32H5xx" IPContextCoupling="SPI1I2S1" InstanceName="I2S1" Name="I2S" Version="spi2s3_v2_1_Cube">
         <ContextSplit Name="split1">
             <ContextIP ContextName="CortexM33S"/>
         </ContextSplit>
@@ -240,7 +240,7 @@
             <ContextIP ContextName="CortexM33"/>
         </ContextSplit>
     </IP>
-    <IP ConfigFile="I2S-STM32H5xx" IPContextCoupling="SPI2I2S2" InstanceName="I2S2" Name="I2S" Version="spi2s3_v2_1_Cube">
+    <IP ClockEnableMode="__HAL_RCC_SPI2_CLK_ENABLE" ConfigFile="I2S-STM32H5xx" IPContextCoupling="SPI2I2S2" InstanceName="I2S2" Name="I2S" Version="spi2s3_v2_1_Cube">
         <ContextSplit Name="split1">
             <ContextIP ContextName="CortexM33S"/>
         </ContextSplit>
@@ -452,7 +452,7 @@
             <ContextIP ContextName="CortexM33S" ForcedSelection="true" InitializerForced="true"/>
         </ContextSplit>
     </IP>
-    <IP InstanceName="SBS" Name="SBS" Version="sbs_v1_0_Cube">
+    <IP InstanceName="SBS" Name="SBS" Version="sbs_v1_1_Cube">
         <ContextSplit Name="split1">
             <ContextIP ContextName="CortexM33S"/>
         </ContextSplit>

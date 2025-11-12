@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2024 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
 <IP DBVersion="V3.0" IPType="service" Name="GPIO" Version="STM32MP13x_gpio_v1_0" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:schemaLocation="http://dummy.com IP_Modes_V3_0.xsd" xmlns="http://dummy.com">
     <About>GPIO: General Purpose Input Output</About>
     <RefParameter Name="PinState" Comment="GPIO output level" Type="list" DefaultValue="GPIO_PIN_RESET">
@@ -1395,7 +1395,7 @@
         </PinSignal>
         <PinSignal Name="I2S2_SDO">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF8_I2S2</PossibleValue>
+                <PossibleValue>GPIO_AF8_SPI2</PossibleValue>
             </SpecificParameter>
         </PinSignal>
         <PinSignal Name="LTDC_B7">
@@ -1605,7 +1605,7 @@
         </PinSignal>
         <PinSignal Name="I2S2_CK">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF6_I2S2</PossibleValue>
+                <PossibleValue>GPIO_AF6_SPI2</PossibleValue>
             </SpecificParameter>
         </PinSignal>
         <PinSignal Name="I2S4_WS">
@@ -1930,7 +1930,7 @@
         </PinSignal>
         <PinSignal Name="I2S_CKIN">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF5_I2S1</PossibleValue>
+                <PossibleValue>GPIO_AF5_SPI1</PossibleValue>
             </SpecificParameter>
         </PinSignal>
         <PinSignal Name="LTDC_B4">
@@ -2390,7 +2390,7 @@
         </PinSignal>
         <PinSignal Name="I2S1_SDO">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF6_I2S1</PossibleValue>
+                <PossibleValue>GPIO_AF6_SPI1</PossibleValue>
             </SpecificParameter>
         </PinSignal>
         <PinSignal Name="SAI1_CK2">
@@ -2649,7 +2649,7 @@
         </PinSignal>
         <PinSignal Name="I2S1_CK">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF6_I2S1</PossibleValue>
+                <PossibleValue>GPIO_AF6_SPI1</PossibleValue>
             </SpecificParameter>
         </PinSignal>
         <PinSignal Name="I2S1_SDI">
@@ -2869,7 +2869,7 @@
         </PinSignal>
         <PinSignal Name="I2S2_MCK">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF6_I2S2</PossibleValue>
+                <PossibleValue>GPIO_AF6_SPI2</PossibleValue>
             </SpecificParameter>
         </PinSignal>
         <PinSignal Name="LTDC_G6">
@@ -6019,7 +6019,7 @@
         </PinSignal>
         <PinSignal Name="I2S2_SDO">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF6_I2S2</PossibleValue>
+                <PossibleValue>GPIO_AF6_SPI2</PossibleValue>
             </SpecificParameter>
         </PinSignal>
         <PinSignal Name="I2S3_MCK">

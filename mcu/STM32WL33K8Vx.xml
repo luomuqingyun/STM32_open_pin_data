@@ -16,7 +16,6 @@
     <IP ConfigFile="FATFS-STM32WL3xx" InstanceName="FATFS" Name="FATFS" Version="v0.15_Cube"/>
     <IP ConfigFile="FREERTOS-STM32WL3xx" InstanceName="FREERTOS" Name="FREERTOS" Version="v10.5.1_Cube"/>
     <IP InstanceName="I2C1" Name="I2C" Version="i2c2_v1_1_Cube"/>
-    <IP InstanceName="I2C2" Name="I2C" Version="i2c2_v1_1_Cube"/>
     <IP ClockEnableMode="__HAL_RCC_SPI3_CLK_ENABLE" ConfigFile="I2S-STM32WL3xx" InstanceName="I2S3" Name="I2S" Version="spi2s1_v3_3_Cube"/>
     <IP ClockEnableMode="none" ConfigFile="IWDG-STM32WL3xx" InstanceName="IWDG" Name="IWDG" Version="iwdg1_v2_0"/>
     <IP ClockEnableMode="__HAL_RCC_LCDC_CLK_ENABLE" ConfigFile="LCD-STM32WL3xx" InstanceName="LCD" Name="LCD" Version="lcdcWL331_v1_3_Cube"/>
@@ -138,7 +137,6 @@
         <Signal IOModes="Input,Output,Analog,EXTI" Name="GPIO"/>
     </Pin>
     <Pin Name="PB13" Position="11" Type="I/O">
-        <Signal Name="I2C2_SMBA"/>
         <Signal Name="RCC_OSC32_IN"/>
         <Signal Name="TIM2_CH4"/>
         <Signal IOModes="Input,Output,Analog,EXTI" Name="GPIO"/>

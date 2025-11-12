@@ -226,7 +226,7 @@
             <ContextIP ContextName="Appli"/>
         </ContextSplit>
     </IP>
-    <IP ClockEnableMode="__HAL_RCC_SPI3_CLK_ENABLE" ConfigFile="I2S-STM32H7RSxx" InstanceName="I2S6" Name="I2S" Version="spi2s3_v2_1_Cube">
+    <IP ClockEnableMode="__HAL_RCC_SPI6_CLK_ENABLE" ConfigFile="I2S-STM32H7RSxx" InstanceName="I2S6" Name="I2S" Version="spi2s3_v2_1_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="Boot"/>
             <ContextIP ContextName="Appli"/>
@@ -293,7 +293,7 @@
             <ContextIP ContextName="Appli"/>
         </ContextSplit>
     </IP>
-    <IP ConfigFile="LWIP-STM32H7RSxx" InstanceName="LWIP" Name="LWIP" Version="v2.1.3_Cube">
+    <IP ConfigFile="LWIP-STM32H7RSxx" InstanceName="LWIP" Name="LWIP" Version="v2.2.1_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="Boot"/>
             <ContextIP ContextName="Appli"/>
@@ -1072,7 +1072,7 @@
         <Signal Name="TAMP_IN1"/>
         <Signal Name="TAMP_OUT2"/>
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
-        <Condition Diagnostic="" Expression="!(RTC_OUT1 &amp; CALIBRATION)"/>
+        <Condition Diagnostic="" Expression="!(RTC_OUT2 &amp; (WakeUp_Outputed | AlarmA_Outputed | AlarmB_Outputed))"/>
     </Pin>
     <Pin Name="VCAP4" Position="E5" Type="Power"/>
     <Pin Name="PB4(NJTRST)" Position="E6" Type="I/O">
@@ -1869,7 +1869,7 @@
         <Signal Name="SAI1_SD_A"/>
         <Signal Name="SPI3_MOSI"/>
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
-        <Condition Diagnostic="" Expression="!(RTC_OUT2 &amp; (WakeUp_Outputed | AlarmA_Outputed | AlarmB_Outputed))"/>
+        <Condition Diagnostic="" Expression="!(RTC_OUT1 &amp; CALIBRATION)"/>
     </Pin>
     <Pin Name="PE8" Position="N4" Type="I/O">
         <Signal Name="FMC_A12"/>
