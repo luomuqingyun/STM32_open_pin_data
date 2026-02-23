@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <IP DBVersion="V3.0" IPType="service" Name="GPIO" Version="STM32U5FG_gpio_v1_0" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:schemaLocation="http://dummy.com IP_Modes_V3_0.xsd" xmlns="http://dummy.com">
     <About>GPIO: General Purpose Input Output</About>
     <RefParameter Name="LPGPIOx" Comment="LPGPIO address" Type="list" Visible="false">
@@ -745,6 +745,7 @@
         <Parameter Name="PinAttribute"/>
     </RefMode>
     <RefMode Name="Input">
+        <Condition Diagnostic="" Expression="!(PA11|PA12)"/>
         <ConfigForMode>GPIO</ConfigForMode>
         <Parameter Name="GPIO_PuPd"/>
         <Parameter Name="GPIOx"/>
@@ -755,7 +756,33 @@
         <Parameter Name="PinAttribute"/>
     </RefMode>
     <RefMode Name="Output">
+        <Condition Diagnostic="" Expression="!(PA11|PA12)"/>
         <ConfigForMode>GPIODefaultOutputPP</ConfigForMode>
+        <Parameter Name="GPIO_Speed"/>
+        <Parameter Name="GPIO_PuPd"/>
+        <Parameter Name="GPIOx"/>
+        <Parameter Name="GPIO_ModeDefaultOutputPP">
+            <PossibleValue>GPIO_MODE_OUTPUT_PP</PossibleValue>
+            <PossibleValue>GPIO_MODE_OUTPUT_OD</PossibleValue>
+        </Parameter>
+        <Parameter Name="GPIO_Pin"/>
+        <Parameter Name="PinState"/>
+        <Parameter Name="PinAttribute"/>
+    </RefMode>
+    <RefMode Name="Input">
+        <Condition Diagnostic="" Expression="PA11|PA12"/>
+        <ConfigForMode>GPIO_PWR</ConfigForMode>
+        <Parameter Name="GPIO_PuPd"/>
+        <Parameter Name="GPIOx"/>
+        <Parameter Name="GPIO_Mode">
+            <PossibleValue>GPIO_MODE_INPUT</PossibleValue>
+        </Parameter>
+        <Parameter Name="GPIO_Pin"/>
+        <Parameter Name="PinAttribute"/>
+    </RefMode>
+    <RefMode Name="Output">
+        <Condition Diagnostic="" Expression="PA11|PA12"/>
+        <ConfigForMode>GPIODefaultOutputPP_PWR</ConfigForMode>
         <Parameter Name="GPIO_Speed"/>
         <Parameter Name="GPIO_PuPd"/>
         <Parameter Name="GPIOx"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32H723" DBVersion="V3.0" Family="STM32H7" HasPowerPad="false" IOType="" Line="STM32H725/735" Package="VFQFPN68" RefName="STM32H725RGVx" xmlns="http://dummy.com">
     <Core>Arm Cortex-M7</Core>
     <Frequency>550</Frequency>
@@ -95,7 +95,8 @@
     <IP InstanceName="USART3" Name="USART" Version="sci3_v2_0_Cube"/>
     <IP ConfigFile="USB_DEVICE-STM32H7xx" InstanceName="USB_DEVICE" Name="USB_DEVICE" Version="v1.0_Cube"/>
     <IP ConfigFile="USB_HOST-STM32H7xx" InstanceName="USB_HOST" Name="USB_HOST" Version="v1.0_Cube"/>
-    <IP InstanceName="USB_OTG_HS" Name="USB_OTG_HS" Version="otghs1_v2_0_Cube"/>
+    <IP InstanceName="USB_OTG_HS" Name="USB_OTG_HS" Version="otghs1_v2_0_h7_Cube"/>
+    <IP InstanceName="USB_OTG_HS1" Name="USB_OTG_HS1" Version="otghs1_v2_0_h7_Cube"/>
     <IP ConfigFile="PWR-STM32H7xx" InstanceName="VREFBUF" Name="VREFBUF" Version="STM32H7_vrefbuf_v1_0"/>
     <IP ClockEnableMode="HAL_RCCEx_WWDGxSysResetConfig(RCC_WWDG1);__HAL_RCC_WWDG1_CLK_ENABLE" ConfigFile="WWDG-STM32H7xx" InstanceName="WWDG1" Name="WWDG" Version="wwdg1_v2_0"/>
     <IP ConfigFile="MEMORYMAP-STM32xx" InstanceName="MEMORYMAP" Name="MEMORYMAP" Version="STM32xx"/>

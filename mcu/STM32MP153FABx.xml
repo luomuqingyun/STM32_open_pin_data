@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32MP" DBVersion="V3.0" Family="STM32MP1" HasPowerPad="false" IOType="" Line="STM32MP153" Package="LFBGA354" RefName="STM32MP153FABx" xmlns="http://dummy.com">
     <Core>ARM Cortex-A7</Core>
     <Core>ARM Cortex-M4</Core>
@@ -140,7 +140,7 @@
             <ContextIP ContextName="CortexM4" DevalidatedOnSelect="CortexA7NS,BootROM,BootLoader"/>
         </ContextSplit>
     </IP>
-    <IP ConfigFile="FREERTOS-STM32MP1xx" InstanceName="FREERTOS" Name="FREERTOS" Version="v8.0.0_Cube">
+    <IP ConfigFile="FREERTOS-STM32MP1xx" InstanceName="FREERTOS" Name="FREERTOS" Version="MP1-v8.0.0_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexM4" InitializerForced="true"/>
         </ContextSplit>

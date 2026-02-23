@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2022 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32WL" DBVersion="V3.0" Family="STM32WL" HasPowerPad="false" IOType="" Line="STM32WL5x" Package="LGA92" RefName="STM32WL5MOCHx" xmlns="http://dummy.com">
     <Core>ARM Cortex-M4</Core>
     <Core>ARM Cortex-M0+</Core>
@@ -81,9 +81,7 @@
     <IP ClockEnableMode="none" ConfigFile="KMS-STM32WLxx" InstanceName="KMS" Name="KMS" Version="v1.1.9_Cube"/>
     <IP ConfigFile="LORAWAN-STM32WLxx" InstanceName="LORAWAN" Name="LoRaWAN" Version="v2.5.0_Cube">
         <ContextSplit Name="split1">
-            <ContextIP ContextName="CortexM4" ForcedSelection="true" InitializerForced="true"/>
             <ContextIP ContextName="CortexM4MonoOnDual" ForcedSelection="true" InitializerForced="true"/>
-            <ContextIP ContextName="CortexM0Plus" ForcedSelection="true"/>
         </ContextSplit>
     </IP>
     <IP ConfigFile="LPTIM-STM32WLxx" InstanceName="LPTIM1" Name="LPTIM" Version="WL5_lptimer1_v2_1_Cube"/>

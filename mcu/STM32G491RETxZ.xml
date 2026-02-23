@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32G4-479" DBVersion="V3.0" Family="STM32G4" HasPowerPad="false" IOType="" Line="STM32G4x1" Package="LQFP64" RefName="STM32G491RETxZ" xmlns="http://dummy.com">
     <Core>ARM Cortex-M4</Core>
     <Frequency>170</Frequency>
-    <Ram>128</Ram>
+    <Ram>112</Ram>
     <IONb>52</IONb>
     <Die>DIE479</Die>
     <Flash>512</Flash>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2024 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32F722" DBVersion="V3.0" Family="STM32F7" HasPowerPad="false" IOType="" Line="STM32F7x3" Package="UFBGA144" RefName="STM32F723Z(C-E)Ix" xmlns="http://dummy.com">
     <Core>Arm Cortex-M7</Core>
     <Frequency>216</Frequency>
@@ -619,7 +619,7 @@
         <Signal Name="USART3_CTS"/>
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
     </Pin>
-    <Pin Name="V12PHYHS" Position="H10" Type="Power"/>
+    <Pin Name="V12_PHYHS" Position="H10" Type="Power"/>
     <Pin Name="REXTPHYHS" Position="H11" Type="MonoIO">
         <Signal Name="USB_OTG_HS_REXTPHYHS"/>
     </Pin>

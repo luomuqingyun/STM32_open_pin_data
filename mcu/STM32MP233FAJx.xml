@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32MP2" DBVersion="V3.0" Family="STM32MP2" HasPowerPad="false" IOType="" Line="STM32MP233" Package="TFBGA361" RefName="STM32MP233FAJx" xmlns="http://dummy.com">
     <Core>ARM Cortex-A35</Core>
     <Core>ARM Cortex-M33</Core>
@@ -10,18 +10,18 @@
     <GentypeFirmware FirmwareName="TF-M" GenType="TF-M"/>
     <GentypeFirmware FirmwareName="Cube" GenType="CUBE"/>
     <GentypeFirmware FirmwareName="U-Boot" GenType="U-BOOT"/>
-    <ContextProject Attributes="MONO" Comment="A35 Master without Cortex M33 TrustZone activated ?" Contexts="BootROMA35,CortexA35SFSBLA,CortexA35SSecureOS,CortexA35NSSSBL,CortexA35NSOS,CortexM33NS" Name="A35TD_TZDIS"/>
-    <ContextProject Attributes="DUAL,TZ" Comment="A35 Master with Cortex M33 TrustZone activated ?" Contexts="BootROMA35,CortexA35SFSBLA,CortexA35SSecureOS,CortexA35NSSSBL,CortexA35NSOS,CortexM33SSecureOS,CortexM33NS" Name="A35TD_TZEN"/>
-    <ContextProject Attributes="DUAL,TZ" Comment="M33 Master" Contexts="BootROMA35,CortexA35SFSBLA,CortexA35SSecureOS,CortexA35NSSSBL,CortexA35NSOS,CortexM33SFSBLM,CortexM33SSecureOS,CortexM33NS,ExtMemLoader" Name="M33TD"/>
+    <ContextProject Attributes="MONO" Comment="Cortex-A35 Master with TrustZone disabled on Cortex-M33" Contexts="BootROMA35,CortexA35SFSBLA,CortexA35SSecureOS,CortexA35NSSSBL,CortexA35NSOS,CortexM33NS" Name="A35TD_TZDIS"/>
+    <ContextProject Attributes="DUAL,TZ" Comment="Cortex-A35 Master with TrustZone enabled on Cortex-M33" Contexts="BootROMA35,CortexA35SFSBLA,CortexA35SSecureOS,CortexA35NSSSBL,CortexA35NSOS,CortexM33SSecureOS,CortexM33NS" Name="A35TD_TZEN"/>
+    <ContextProject Attributes="DUAL,TZ" Comment="Cortex-M33 Master with Cortex-A35 as coprocessor" Contexts="BootROMA35,CortexA35SFSBLA,CortexA35SSecureOS,CortexA35NSSSBL,CortexA35NSOS,CortexM33SFSBLM,CortexM33SSecureOS,CortexM33NS,ExtMemLoader" Name="M33TD"/>
     <Context Comment="Enable the Boot ROM context for the peripheral(s) that you want to use as boot device(s): &lt;br/&gt;                              this will restrain the pins choices to the ones recognized by the Boot ROM." Core="ARM Cortex-A35" GenType="BOOTROM" GroupName="Boot time" GroupShortName="BT" LongName="Cortex-A35 ROM code" Name="BootROMA35" Secure="true" SemaphoreSuffix="_BOOTROM" ShortName="A35 ROM"/>
     <Context Comment="Enable the Boot loader context (TF-A_BL2) for the peripheral(s) &lt;br/&gt;                                    that you want to use in the early boot execution context" Core="ARM Cortex-A35" GenType="TF-A" GroupName="Boot time" GroupShortName="BT" LongName="Cortex-A35 secure loader" Name="CortexA35SFSBLA" Secure="true" SemaphoreSuffix="_BOOTLOADER_FSBLA" ShortName="A35S"/>
     <Context Comment="Enable the Cortex-A35 context for the peripheral(s)  &lt;br/&gt;                                                      that you plan to use from Secure OS" Core="ARM Cortex-A35" GenType="OP-TEE" GroupName="Runtime contexts" GroupShortName="RT" LongName="CortexA35S Secure OS" Name="CortexA35SSecureOS" Secure="true" SemaphoreSuffix="_SECURE_OS" ShortName="A35S"/>
     <Context Comment="Enable the Cortex-A35 non-secure context for the peripheral(s) &lt;br/&gt;                                       that you want to use from U-Boot" Core="ARM Cortex-A35" GenType="U-BOOT" GroupName="Runtime contexts" GroupShortName="RT" LongName="Cortex-A35 non secure loader" Name="CortexA35NSSSBL" Secure="false" SemaphoreSuffix="_BOOTLOADER_SSBL" ShortName="A35NS"/>
     <Context Comment="Enable the Cortex-A35 non-secure context for the peripheral(s)  &lt;br/&gt;                                  that you plan to use from Linux" Core="ARM Cortex-A35" GenType="LINUX" GroupName="Runtime contexts" GroupShortName="RT" LongName="Cortex-A35 non secure OS" Name="CortexA35NSOS" Secure="false" SemaphoreSuffix="_LINUX" ShortName="A35NS"/>
     <Context Comment="Enable the Boot loader context for the peripheral(s) &lt;br/&gt;                                                                                                                                                        that you want to use in the early boot execution context" Core="ARM Cortex-M33" GenType="MCUBOOT" GroupName="Boot time" GroupShortName="BT" LongName="Cortex-M33 secure loader" Name="CortexM33SFSBLM" Secure="true" SemaphoreSuffix="_BOOTLOADER_FSBLM" ShortName="M33S"/>
-    <Context Comment="Enable the Cortex-M33 context for the peripheral(s) &lt;br/&gt;                                                                        that you plan to use from Secure OS" Core="ARM Cortex-M33" GenType="TF-M" GroupName="Runtime contexts" GroupShortName="RT" LongName="Cortex-M33 secure FW" Name="CortexM33SSecureOS" Secure="true" SemaphoreSuffix="_SECURE_OS" ShortName="M33S"/>
+    <Context Comment="Enable the Cortex-M33 context for the peripheral(s) &lt;br/&gt;                                                                        that you plan to use from Secure OS" Core="ARM Cortex-M33" GenType="TF-M" GroupName="Runtime contexts" GroupShortName="RT" LongName="Cortex-M33 secure FW" Name="CortexM33SSecureOS" Secure="true" SemaphoreSuffix="_TFM" ShortName="M33S"/>
     <Context Comment="Enable the Cortex-M33 non-secure context for the peripheral(s) &lt;br/&gt;                                             that you want to use from Cube" Core="ARM Cortex-M33" GenType="CUBE" GroupName="Runtime contexts" GroupShortName="RT" LongName="Cortex-M33 non secure FW" Name="CortexM33NS" Secure="false" SemaphoreSuffix="_CUBE" ShortName="M33NS"/>
-    <Context Comment="Enable the External Memory Loader code context only for the peripheral(s)  &lt;br/&gt;               you want to use in Eloader" Core="ARM Cortex-M33" GenType="EL" GroupName="Runtime contexts" GroupShortName="RT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
+    <Context Comment="Enable the External Memory Loader code context only for the peripheral(s)  &lt;br/&gt;               you want to use in Eloader" Core="ARM Cortex-M33" GenType="EL" GroupName="Runtime contexts" GroupShortName="BT" LongName="ExternalMemoryLoader" Name="ExtMemLoader" Secure="false" SemaphoreSuffix="_EL" ShortName="ExtMemLoader"/>
     <Ram>776</Ram>
     <IONb>148</IONb>
     <Die>DIE505</Die>
@@ -341,7 +341,7 @@
             <ContextIP ContextName="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexA35NSOS" DevalidatedOnSelect="CortexA35NSSSBL" ValidatedOnSelect="CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33SFSBLM"/>
-            <ContextIP ContextName="CortexM33SSecureOS"/>
+            <ContextIP ContextName="CortexM33SSecureOS" DevalidatedOnSelect="CortexM33NS,CortexA35NSOS,CortexA35NSSSBL"/>
             <ContextIP ContextName="CortexM33NS" DevalidatedOnSelect="CortexM33SSecureOS,CortexA35SSecureOS"/>
             <ContextIP ContextName="ExtMemLoader"/>
         </ContextSplit>
@@ -571,6 +571,11 @@
             <ContextIP ContextName="CortexM33SSecureOS"/>
             <ContextIP ContextName="CortexM33NS"/>
             <ContextIP ContextName="ExtMemLoader"/>
+        </ContextSplit>
+    </IP>
+    <IP ConfigFile="M33TD_NSAppCore-STM32MP2xx" InstanceName="M33TD_NSAPPCORE" Name="M33TD_NSAppCore" Version="MP2_Cube">
+        <ContextSplit Name="NOINIT1">
+            <ContextIP ContextName="CortexM33NS" ContextProject="M33TD" ForcedSelection="true"/>
         </ContextSplit>
     </IP>
     <IP ConfigFile="MDF-STM32MP2xx" InstanceName="MDF1" Name="MDF" Version="STM32MP2_mdf_v1_0_Cube">
@@ -945,6 +950,11 @@
             <ContextIP ContextName="BootROMA35" ContextProject="M33TD"/>
         </ContextSplit>
     </IP>
+    <IP ConfigFile="TF_M-STM32MP2xx" InstanceName="TF_M" Name="trusted-firmware-m" Version="TF-M-MP2_Cube">
+        <ContextSplit Name="NOINIT1">
+            <ContextIP ContextName="CortexM33NS" ContextProject="M33TD" ForcedSelection="true"/>
+        </ContextSplit>
+    </IP>
     <IP ConfigFile="TIM-STM32MP2xx" InstanceName="TIM1" Name="TIM1_8MP2" Version="gptimer2_v4_x_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="CortexA35SFSBLA"/>
@@ -1285,7 +1295,7 @@
         </ContextSplit>
     </IP>
     <IP ConfigFile="GPIO-STM32MP2xx" InstanceName="GPIO" Name="GPIO" Version="STM32MP23_gpio_v1_0">
-        <ContextSplit Name="split1">
+        <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="BootROMA35" InitializerForced="true"/>
             <ContextIP ContextName="CortexA35SFSBLA" InitializerForced="true"/>
             <ContextIP ContextName="CortexA35SSecureOS" InitializerForced="true"/>

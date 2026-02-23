@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32N6" DBVersion="V3.0" Family="STM32N6" HasPowerPad="false" IOType="" Line="STM32N6x5" Package="VFBGA142" RefName="STM32N645Z0HxQ" xmlns="http://dummy.com">
     <Core>ARM Cortex-M55</Core>
     <ContextProject Attributes="DUAL,TZ" Comment="Secure and Non Secure domains" Contexts="FSBL,AppliSecure,AppliNonSecure,ExtMemLoader" Name="SecureNSecure"/>
@@ -847,7 +847,7 @@
     <Pin Name="OTG1_TXRTUNE" Position="A6" Type="MonoIO"/>
     <Pin Name="PH0-OSC_IN(PH0)" Position="A7" Type="I/O">
         <Signal Name="RCC_OSC_IN"/>
-        <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
+        <Signal IOModes="Input,EXTI" Name="GPIO"/>
     </Pin>
     <Pin Name="PC8" Position="A8" Type="I/O">
         <Signal Name="DCMIPP_D2"/>
@@ -916,10 +916,8 @@
     </Pin>
     <Pin Name="VSS" Position="A15" Type="Power"/>
     <Pin Name="PC15-OSC32_OUT(OSC32_OUT)" Position="B1" Type="I/O">
-        <Signal Name="ADC1_EXTI15"/>
-        <Signal Name="ADC2_EXTI15"/>
         <Signal Name="RCC_OSC32_OUT"/>
-        <Signal IOModes="Input,Output,Analog,EXTI" Name="GPIO"/>
+        <Signal IOModes="Input,EXTI" Name="GPIO"/>
     </Pin>
     <Pin Name="BOOT0" Position="B2" Type="Boot"/>
     <Pin Name="OTG2_HSDP" Position="B3" Type="MonoIO">
@@ -934,7 +932,7 @@
     <Pin Name="VDD33USB" Position="B6" Type="Power"/>
     <Pin Name="PH1-OSC_OUT(PH1)" Position="B7" Type="I/O">
         <Signal Name="RCC_OSC_OUT"/>
-        <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
+        <Signal IOModes="Input,EXTI" Name="GPIO"/>
     </Pin>
     <Pin Name="PC9" Position="B8" Type="I/O">
         <Signal Name="AUDIOCLK"/>
@@ -1016,7 +1014,7 @@
     </Pin>
     <Pin Name="PC14-OSC32_IN(OSC32_IN)" Position="C1" Type="I/O">
         <Signal Name="RCC_OSC32_IN"/>
-        <Signal IOModes="Input,Output,Analog,EXTI" Name="GPIO"/>
+        <Signal IOModes="Input,EXTI" Name="GPIO"/>
     </Pin>
     <Pin Name="NRST" Position="C2" Type="Reset"/>
     <Pin Name="NC" Position="C3" Type="NC"/>
@@ -1114,7 +1112,7 @@
         <Signal Name="TAMP_IN1"/>
         <Signal Name="TAMP_OUT2"/>
         <Signal IOModes="Input,Output,Analog,EXTI" Name="GPIO"/>
-        <Condition Diagnostic="" Expression="!(RTC_OUT1 &amp; CALIBRATION)"/>
+        <Condition Diagnostic="" Expression="!(RTC_OUT2 &amp; (WakeUp_Outputed | AlarmA_Outputed | AlarmB_Outputed))"/>
     </Pin>
     <Pin Name="VDDA18AON" Position="E4" Type="Power"/>
     <Pin Name="PB7" Position="E12" Type="I/O">
