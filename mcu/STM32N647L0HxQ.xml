@@ -1434,7 +1434,6 @@
         <Condition Diagnostic="" Expression="!(RTC_OUT1 &amp; CALIBRATION)"/>
     </Pin>
     <Pin Name="PB3" Position="B17" Type="I/O">
-        <Signal Name="DEBUG_JTDO-SWO"/>
         <Signal Name="DEBUG_TRACECLK"/>
         <Signal Name="FMC_A23"/>
         <Signal Name="FMC_NBL1"/>

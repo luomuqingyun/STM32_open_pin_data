@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32G4" DBVersion="V3.0" Family="STM32G4" HasPowerPad="false" IOType="" Line="STM32G4x4" Package="UFQFPN48" RefName="STM32G414CBUx" xmlns="http://dummy.com">
     <Core>ARM Cortex-M4</Core>
     <Ram>256</Ram>
@@ -363,6 +363,7 @@
         <Signal Name="HRTIM1_CHB1"/>
         <Signal Name="I2C2_SMBA"/>
         <Signal Name="SPI2_MISO"/>
+        <Signal Name="SYS_PVD_IN"/>
         <Signal Name="TIM17_BKIN"/>
         <Signal Name="TIM1_CH3"/>
         <Signal Name="TIM2_CH4"/>
@@ -519,7 +520,6 @@
         <Signal Name="HRTIM1_EEV3"/>
         <Signal Name="I2C1_SDA"/>
         <Signal Name="LPTIM1_IN2"/>
-        <Signal Name="SYS_PVD_IN"/>
         <Signal Name="TIM17_CH1N"/>
         <Signal Name="TIM3_CH4"/>
         <Signal Name="TIM4_CH2"/>

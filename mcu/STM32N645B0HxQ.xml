@@ -1165,7 +1165,6 @@
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
     </Pin>
     <Pin Name="PB3" Position="A14" Type="I/O">
-        <Signal Name="DEBUG_JTDO-SWO"/>
         <Signal Name="DEBUG_TRACECLK"/>
         <Signal Name="FMC_A23"/>
         <Signal Name="FMC_NBL1"/>

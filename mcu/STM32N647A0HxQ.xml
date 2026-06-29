@@ -1271,7 +1271,6 @@
     <Pin Name="VSS" Position="E8" Type="Power"/>
     <Pin Name="VDD" Position="E9" Type="Power"/>
     <Pin Name="PB3" Position="E10" Type="I/O">
-        <Signal Name="DEBUG_JTDO-SWO"/>
         <Signal Name="DEBUG_TRACECLK"/>
         <Signal Name="FMC_A23"/>
         <Signal Name="FMC_NBL1"/>

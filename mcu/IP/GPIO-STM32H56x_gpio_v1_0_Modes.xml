@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <IP DBVersion="V3.0" IPType="service" Name="GPIO" Version="STM32H56x_gpio_v1_0" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:schemaLocation="http://dummy.com IP_Modes_V3_0.xsd" xmlns="http://dummy.com">
     <About>GPIO: General Purpose Input Output</About>
     <RefParameter Name="LPGPIOx" Comment="LPGPIO address" Type="list" Visible="false">
@@ -1837,7 +1837,7 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_0</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_CRS">
+        <PinSignal Name="ETH_MII_CRS">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -1915,12 +1915,12 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_1</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_REF_CLK">
+        <PinSignal Name="ETH_MII_RX_CLK">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_RX_CLK">
+        <PinSignal Name="ETH_RMII_REF_CLK">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -2349,7 +2349,7 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_3</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_COL">
+        <PinSignal Name="ETH_MII_COL">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -2470,7 +2470,12 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_5</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_TX_EN">
+        <PinSignal Name="ETH_MII_TX_EN">
+            <SpecificParameter Name="GPIO_AF">
+                <PossibleValue>GPIO_AF11_ETH</PossibleValue>
+            </SpecificParameter>
+        </PinSignal>
+        <PinSignal Name="ETH_RMII_TX_EN">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -2591,12 +2596,12 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_7</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_CRS_DV">
+        <PinSignal Name="ETH_MII_RX_DV">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_RX_DV">
+        <PinSignal Name="ETH_RMII_CRS_DV">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -2742,7 +2747,7 @@
                 <PossibleValue>GPIO_AF13_DCMI</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_TX_ER">
+        <PinSignal Name="ETH_MII_TX_ER">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -2800,7 +2805,7 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_0</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_RXD2">
+        <PinSignal Name="ETH_MII_RXD2">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -2853,7 +2858,7 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_1</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_RXD3">
+        <PinSignal Name="ETH_MII_RXD3">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -2896,7 +2901,7 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_10</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_RX_ER">
+        <PinSignal Name="ETH_MII_RX_ER">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -2954,7 +2959,12 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_11</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_TX_EN">
+        <PinSignal Name="ETH_MII_TX_EN">
+            <SpecificParameter Name="GPIO_AF">
+                <PossibleValue>GPIO_AF11_ETH</PossibleValue>
+            </SpecificParameter>
+        </PinSignal>
+        <PinSignal Name="ETH_RMII_TX_EN">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -3007,7 +3017,12 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_12</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_TXD0">
+        <PinSignal Name="ETH_MII_TXD0">
+            <SpecificParameter Name="GPIO_AF">
+                <PossibleValue>GPIO_AF11_ETH</PossibleValue>
+            </SpecificParameter>
+        </PinSignal>
+        <PinSignal Name="ETH_RMII_TXD0">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -3216,7 +3231,12 @@
                 <PossibleValue>GPIO_AF13_DCMI</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_TXD1">
+        <PinSignal Name="ETH_MII_TXD1">
+            <SpecificParameter Name="GPIO_AF">
+                <PossibleValue>GPIO_AF11_ETH</PossibleValue>
+            </SpecificParameter>
+        </PinSignal>
+        <PinSignal Name="ETH_RMII_TXD1">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -3807,7 +3827,7 @@
                 <PossibleValue>GPIO_AF13_DCMI</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_TXD3">
+        <PinSignal Name="ETH_MII_TXD3">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -4094,7 +4114,12 @@
                 <PossibleValue>GPIO_AF13_DCMI</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_TXD0">
+        <PinSignal Name="ETH_MII_TXD0">
+            <SpecificParameter Name="GPIO_AF">
+                <PossibleValue>GPIO_AF11_ETH</PossibleValue>
+            </SpecificParameter>
+        </PinSignal>
+        <PinSignal Name="ETH_RMII_TXD0">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -4321,7 +4346,7 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_2</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_TXD2">
+        <PinSignal Name="ETH_MII_TXD2">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -4379,7 +4404,7 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_3</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_TX_CLK">
+        <PinSignal Name="ETH_MII_TX_CLK">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -4437,7 +4462,12 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_4</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_RXD0">
+        <PinSignal Name="ETH_MII_RXD0">
+            <SpecificParameter Name="GPIO_AF">
+                <PossibleValue>GPIO_AF11_ETH</PossibleValue>
+            </SpecificParameter>
+        </PinSignal>
+        <PinSignal Name="ETH_RMII_RXD0">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -4485,7 +4515,12 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_5</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_RXD1">
+        <PinSignal Name="ETH_MII_RXD1">
+            <SpecificParameter Name="GPIO_AF">
+                <PossibleValue>GPIO_AF11_ETH</PossibleValue>
+            </SpecificParameter>
+        </PinSignal>
+        <PinSignal Name="ETH_RMII_RXD1">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -5972,7 +6007,7 @@
                 <PossibleValue>GPIO_AF0_TRACE</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_TXD3">
+        <PinSignal Name="ETH_MII_TXD3">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -7093,7 +7128,12 @@
                 <PossibleValue>GPIO_AF13_DCMI</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_TX_EN">
+        <PinSignal Name="ETH_MII_TX_EN">
+            <SpecificParameter Name="GPIO_AF">
+                <PossibleValue>GPIO_AF11_ETH</PossibleValue>
+            </SpecificParameter>
+        </PinSignal>
+        <PinSignal Name="ETH_RMII_TX_EN">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -7156,7 +7196,12 @@
                 <PossibleValue>GPIO_AF13_DCMI</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_TXD1">
+        <PinSignal Name="ETH_MII_TXD1">
+            <SpecificParameter Name="GPIO_AF">
+                <PossibleValue>GPIO_AF11_ETH</PossibleValue>
+            </SpecificParameter>
+        </PinSignal>
+        <PinSignal Name="ETH_RMII_TXD1">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -7229,7 +7274,12 @@
                 <PossibleValue>GPIO_AF0_TRACE</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_TXD0">
+        <PinSignal Name="ETH_MII_TXD0">
+            <SpecificParameter Name="GPIO_AF">
+                <PossibleValue>GPIO_AF11_ETH</PossibleValue>
+            </SpecificParameter>
+        </PinSignal>
+        <PinSignal Name="ETH_RMII_TXD0">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -7297,7 +7347,12 @@
                 <PossibleValue>GPIO_AF0_TRACE</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_TXD1">
+        <PinSignal Name="ETH_MII_TXD1">
+            <SpecificParameter Name="GPIO_AF">
+                <PossibleValue>GPIO_AF11_ETH</PossibleValue>
+            </SpecificParameter>
+        </PinSignal>
+        <PinSignal Name="ETH_RMII_TXD1">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -8051,7 +8106,7 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_2</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_CRS">
+        <PinSignal Name="ETH_MII_CRS">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -8089,7 +8144,7 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_3</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_COL">
+        <PinSignal Name="ETH_MII_COL">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -8193,7 +8248,7 @@
                 <PossibleValue>GPIO_AF13_DCMI</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_RXD2">
+        <PinSignal Name="ETH_MII_RXD2">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -8251,7 +8306,7 @@
                 <PossibleValue>GPIO_AF13_DCMI</PossibleValue>
             </SpecificParameter>
         </PinSignal>
-        <PinSignal Name="ETH_RXD3">
+        <PinSignal Name="ETH_MII_RXD3">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>
@@ -8471,7 +8526,7 @@
         <SpecificParameter Name="GPIO_Pin">
             <PossibleValue>GPIO_PIN_10</PossibleValue>
         </SpecificParameter>
-        <PinSignal Name="ETH_RX_ER">
+        <PinSignal Name="ETH_MII_RX_ER">
             <SpecificParameter Name="GPIO_AF">
                 <PossibleValue>GPIO_AF11_ETH</PossibleValue>
             </SpecificParameter>

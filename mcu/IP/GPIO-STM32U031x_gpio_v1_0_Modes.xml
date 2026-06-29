@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <IP DBVersion="V3.0" IPType="service" Name="GPIO" Version="STM32U031x_gpio_v1_0" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:schemaLocation="http://dummy.com IP_Modes_V3_0.xsd" xmlns="http://dummy.com">
     <About>GPIO: General Purpose Input Output</About>
     <RefParameter Name="LPGPIOx" Comment="LPGPIO address" Type="list" Visible="false">
@@ -1647,7 +1647,7 @@
         </PinSignal>
         <PinSignal Name="RCC_MCO2">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF3_SYS</PossibleValue>
+                <PossibleValue>GPIO_AF3_MCO2</PossibleValue>
             </SpecificParameter>
         </PinSignal>
         <PinSignal Name="SPI2_NSS">
@@ -2159,7 +2159,7 @@
         </PinSignal>
         <PinSignal Name="RCC_MCO2">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF3_SYS</PossibleValue>
+                <PossibleValue>GPIO_AF3_MCO2</PossibleValue>
             </SpecificParameter>
         </PinSignal>
         <PinSignal Name="TIM1_CH1">
@@ -3232,12 +3232,12 @@
         </PinSignal>
         <PinSignal Name="RCC_OSC32_EN">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF0_TRACE</PossibleValue>
+                <PossibleValue>GPIO_AF0_OSC32_EN</PossibleValue>
             </SpecificParameter>
         </PinSignal>
         <PinSignal Name="RCC_OSC_EN">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF1_RCC</PossibleValue>
+                <PossibleValue>GPIO_AF1_OSC_EN</PossibleValue>
             </SpecificParameter>
         </PinSignal>
     </GPIO_Pin>
@@ -3274,7 +3274,7 @@
         </PinSignal>
         <PinSignal Name="RCC_MCO2">
             <SpecificParameter Name="GPIO_AF">
-                <PossibleValue>GPIO_AF0_TRACE</PossibleValue>
+                <PossibleValue>GPIO_AF0_MCO2</PossibleValue>
             </SpecificParameter>
         </PinSignal>
         <PinSignal Name="SPI2_MISO">

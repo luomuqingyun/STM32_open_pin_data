@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Copyright (c) 2025 STMicroelectronics. All rights reserved. -->
+<!-- Copyright (c) 2026 STMicroelectronics. All rights reserved. -->
 <Mcu ClockTree="STM32U3" DBVersion="V3.0" Family="STM32U3" HasPowerPad="false" IOType="" Line="STM32U3x5" Package="WLCSP68" RefName="STM32U385RGYxQ" xmlns="http://dummy.com">
     <Core>ARM Cortex-M33</Core>
     <ContextProject Attributes="MONO" Comment="without TrustZone activated ?" Contexts="CortexM33" Name="TrustZoneDisabled"/>
@@ -119,7 +119,7 @@
             <ContextIP ContextName="CortexM33S"/>
         </ContextSplit>
         <ContextSplit Name="split2">
-            <ContextIP ContextName="CortexM33NS" ForcedSelection="true"/>
+            <ContextIP ContextName="CortexM33NS"/>
         </ContextSplit>
         <ContextSplit Name="split3">
             <ContextIP ContextName="CortexM33"/>
@@ -141,7 +141,7 @@
             <ContextIP ContextName="CortexM33S"/>
         </ContextSplit>
         <ContextSplit Name="split2">
-            <ContextIP ContextName="CortexM33NS" ForcedSelection="true"/>
+            <ContextIP ContextName="CortexM33NS"/>
         </ContextSplit>
         <ContextSplit Name="split3">
             <ContextIP ContextName="CortexM33"/>

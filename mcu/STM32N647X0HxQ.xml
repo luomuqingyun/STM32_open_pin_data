@@ -1916,7 +1916,6 @@
     <Pin Name="VSS" Position="F11" Type="Power"/>
     <Pin Name="VSS" Position="F12" Type="Power"/>
     <Pin Name="PB3" Position="F13" Type="I/O">
-        <Signal Name="DEBUG_JTDO-SWO"/>
         <Signal Name="DEBUG_TRACECLK"/>
         <Signal Name="FMC_A23"/>
         <Signal Name="FMC_NBL1"/>

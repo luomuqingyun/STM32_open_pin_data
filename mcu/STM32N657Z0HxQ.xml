@@ -157,6 +157,15 @@
             <ContextIP ContextName="ExtMemLoader"/>
         </ContextSplit>
     </IP>
+    <IP ClockEnableMode="__HAL_RCC_ETH1_CLK_ENABLE;__HAL_RCC_ETH1MAC_CLK_ENABLE;__HAL_RCC_ETH1TX_CLK_ENABLE;__HAL_RCC_ETH1RX_CLK_ENABLE" ConfigFile="ETH-STM32N6xx" InstanceName="ETH1" Name="ETH" Version="ethermac110_v3_1_1">
+        <ContextSplit Name="NOINIT1">
+            <ContextIP ContextName="FSBL"/>
+            <ContextIP ContextName="AppliSecure"/>
+            <ContextIP ContextName="Appli"/>
+            <ContextIP ContextName="AppliNonSecure"/>
+            <ContextIP ContextName="ExtMemLoader"/>
+        </ContextSplit>
+    </IP>
     <IP ConfigFile="EXTMEM_LOADER-STM32N6xx" InstanceName="EXTMEM_LOADER" Name="EXTMEM_LOADER" Version="v1.0.0_N6_Cube">
         <ContextSplit Name="NOINIT1">
             <ContextIP ContextName="ExtMemLoader" ForcedSelection="true"/>
@@ -1043,6 +1052,7 @@
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
     </Pin>
     <Pin Name="PD1" Position="B12" Type="I/O">
+        <Signal Name="ETH1_MDC"/>
         <Signal Name="FDCAN1_TX"/>
         <Signal Name="UART4_TX"/>
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
@@ -1259,6 +1269,7 @@
         <Signal Name="ADC1_INP18"/>
         <Signal Name="DCMIPP_HSYNC"/>
         <Signal Name="DCMI_HSYNC"/>
+        <Signal Name="ETH1_MDIO"/>
         <Signal Name="HDP_HDP4"/>
         <Signal Name="LTDC_R3"/>
         <Signal Name="PSSI_DE"/>
@@ -1271,6 +1282,9 @@
         <Signal Name="DCMIPP_D11"/>
         <Signal Name="DCMIPP_D15"/>
         <Signal Name="DCMI_D11"/>
+        <Signal Name="ETH1_MII_RX_DV"/>
+        <Signal Name="ETH1_RGMII_RX_CTL"/>
+        <Signal Name="ETH1_RMII_CRS_DV"/>
         <Signal Name="LTDC_R1"/>
         <Signal Name="MDF1_SDI3"/>
         <Signal Name="PSSI_D11"/>
@@ -1283,6 +1297,7 @@
     <Pin Name="PF5" Position="K3" Type="I/O">
         <Signal Name="DCMIPP_D6"/>
         <Signal Name="DCMI_D6"/>
+        <Signal Name="ETH1_CLK"/>
         <Signal Name="LPTIM2_IN2"/>
         <Signal Name="LTDC_G0"/>
         <Signal Name="PSSI_D6"/>
@@ -1301,6 +1316,7 @@
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
     </Pin>
     <Pin Name="PF2" Position="L1" Type="I/O">
+        <Signal Name="ETH1_RGMII_CLK125"/>
         <Signal Name="FDCAN3_TX"/>
         <Signal Name="LTDC_B1"/>
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
@@ -1308,6 +1324,9 @@
     <Pin Name="PF14" Position="L2" Type="I/O">
         <Signal Name="ADC2_INN2"/>
         <Signal Name="ADC2_INP6"/>
+        <Signal Name="ETH1_MII_RXD0"/>
+        <Signal Name="ETH1_RGMII_RXD0"/>
+        <Signal Name="ETH1_RMII_RXD0"/>
         <Signal Name="LTDC_G0"/>
         <Signal Name="SPI5_MOSI"/>
         <Signal Name="TIM2_CH2"/>
@@ -1318,6 +1337,7 @@
         <Signal Name="ADC1_INP16"/>
         <Signal Name="DCMIPP_HSYNC"/>
         <Signal Name="DCMI_HSYNC"/>
+        <Signal Name="ETH1_PPS_OUT"/>
         <Signal Name="FDCAN3_RX"/>
         <Signal Name="LTDC_R4"/>
         <Signal Name="PSSI_DE"/>
@@ -1357,6 +1377,9 @@
     <Pin Name="PF15" Position="M1" Type="I/O">
         <Signal Name="ADC1_EXTI15"/>
         <Signal Name="ADC2_EXTI15"/>
+        <Signal Name="ETH1_MII_RXD1"/>
+        <Signal Name="ETH1_RGMII_RXD1"/>
+        <Signal Name="ETH1_RMII_RXD1"/>
         <Signal Name="LTDC_G1"/>
         <Signal Name="SPI5_SCK"/>
         <Signal Name="USART1_DE"/>
@@ -1368,6 +1391,9 @@
         <Signal Name="ADC1_INP9"/>
         <Signal Name="ADC2_INN5"/>
         <Signal Name="ADC2_INP9"/>
+        <Signal Name="ETH1_MII_RX_CLK"/>
+        <Signal Name="ETH1_RGMII_RX_CLK"/>
+        <Signal Name="ETH1_RMII_REF_CLK"/>
         <Signal Name="GFXTIM_TE"/>
         <Signal Name="HDP_HDP0"/>
         <Signal Name="LTDC_VSYNC"/>
@@ -1428,6 +1454,8 @@
     </Pin>
     <Pin Name="PF8" Position="N1" Type="I/O">
         <Signal Name="DEBUG_TRACECLK"/>
+        <Signal Name="ETH1_MII_RXD2"/>
+        <Signal Name="ETH1_RGMII_RXD2"/>
         <Signal Name="LTDC_R6"/>
         <Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
     </Pin>
@@ -1436,6 +1464,9 @@
         <Signal Name="ADC1_INP2"/>
         <Signal Name="ADC2_EXTI11"/>
         <Signal Name="DCMIPP_D15"/>
+        <Signal Name="ETH1_MII_TX_EN"/>
+        <Signal Name="ETH1_RGMII_TX_CTL"/>
+        <Signal Name="ETH1_RMII_TX_EN"/>
         <Signal Name="LTDC_B0"/>
         <Signal Name="PSSI_D15"/>
         <Signal Name="SPI5_MOSI"/>
@@ -1445,6 +1476,9 @@
         <Signal Name="ADC2_INP2"/>
         <Signal Name="DCMIPP_D10"/>
         <Signal Name="DCMI_D10"/>
+        <Signal Name="ETH1_MII_TXD1"/>
+        <Signal Name="ETH1_RGMII_TXD1"/>
+        <Signal Name="ETH1_RMII_TXD1"/>
         <Signal Name="PSSI_D10"/>
         <Signal Name="SPI5_NSS"/>
         <Signal Name="USART1_TX"/>
@@ -1493,6 +1527,9 @@
         <Signal Name="ADC1_INP6"/>
         <Signal Name="DCMIPP_D13"/>
         <Signal Name="DCMI_D13"/>
+        <Signal Name="ETH1_MII_TXD0"/>
+        <Signal Name="ETH1_RGMII_TXD0"/>
+        <Signal Name="ETH1_RMII_TXD0"/>
         <Signal Name="PSSI_D13"/>
         <Signal Name="SPI5_MISO"/>
         <Signal Name="USART1_RX"/>
